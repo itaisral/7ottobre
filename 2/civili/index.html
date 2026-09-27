@@ -29,7 +29,13 @@ footer{border-top:2px solid var(--line);margin-top:36px;padding-top:14px;color:v
 .leaflet-tooltip.lbl{background:rgba(21,21,21,.85);color:#fff;border:0;box-shadow:none;font-family:'Titillium Web',sans-serif;font-weight:600;font-size:12px;padding:1px 6px}
 .leaflet-tooltip.lbl:before{display:none}
 #map .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}.nastro{position:absolute;top:10px;right:20px;width:min(64%,420px);height:92px;pointer-events:none;background:url('/7ottobre/img/nastro.png') right center/contain no-repeat}
-main{position:relative}</style></head><body><main>
+main{position:relative}/*lang*/.lang{display:flex;flex-wrap:wrap;gap:4px 14px;margin:0 0 12px;font-size:.88rem;position:relative;z-index:3}
+.lang a{color:#a9cbf0;text-decoration:none}.lang a[aria-current]{color:#fff;font-weight:700;border-bottom:1.5px solid #a9cbf0}
+.nastro{top:40px!important;width:min(46%,300px)!important}
+main .top{max-width:52%;display:inline-block}/*/lang*/</style></head><body><main>
+<nav class="lang" aria-label="Lingua / Language"><a href="/7ottobre/2/civili/" lang="it" aria-current="page">Italiano</a><a href="/7ottobre/en/2/civili/" lang="en">English</a><a href="/7ottobre/he/2/civili/" lang="he">עברית</a><a href="/7ottobre/ar/2/civili/" lang="ar">العربية</a></nav>
+
+
 <div class="nastro" aria-hidden="true"></div>
 <a class="top" href="../">← Il massacro è documentato</a>
 <p class="kicker">7 ottobre <span>2023</span></p>
