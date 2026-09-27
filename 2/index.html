@@ -22,13 +22,27 @@ ul.list{list-style:none;padding:0;margin:0}ul.list li{border-top:2px solid var(-
 ul.list strong{font-family:'Titillium Web',sans-serif;font-size:1.5rem;display:block}ul.list em{font-style:normal;color:var(--blue);font-family:'Titillium Web',sans-serif;font-weight:700}
 footer{border-top:2px solid var(--line);margin-top:36px;padding-top:14px;color:var(--muted);font-size:.9rem}
 .nastro{position:absolute;top:10px;right:20px;width:min(64%,420px);height:92px;pointer-events:none;background:url('/7ottobre/img/nastro.png') right center/contain no-repeat}
-main{position:relative}</style></head><body><main>
+main{position:relative}.cover{border:1.5px solid #2f7de1;border-left:6px solid #2f7de1;border-radius:4px;padding:16px 18px;margin:18px 0 8px;background:rgba(47,125,225,.07)}
+.cover .org{display:block;font-family:'Titillium Web',sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;color:#a9cbf0}
+.cover .ct{display:block;font-family:'Titillium Web',sans-serif;font-weight:700;font-size:1.35rem;line-height:1.2;margin:.35em 0 .2em}
+.cover .cs{display:block;color:#dfe8f3}.cover .cd{display:block;color:#b9c6d6;font-size:.92rem;margin-top:.5em}
+a.card2{display:flex!important;gap:16px;align-items:center}
+.tb{width:92px;height:92px;flex-shrink:0;border:1px solid rgba(169,203,240,.45);border-radius:3px;background:#1b2230;overflow:hidden}
+.tnum{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4px}
+.tnum b{font-family:'Titillium Web',sans-serif;font-weight:700;font-size:1.9rem;line-height:1;color:#fff}
+.tnum span{font-size:.72rem;line-height:1.15;color:#a9cbf0;margin-top:.3em}
+.tdate b{color:#a9cbf0}
+.tmap .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}
+.tx{min-width:0}</style></head><body><main>
 <div class="nastro" aria-hidden="true"></div>
 <a class="top" href="../">← 7 ottobre 2023</a>
 <p class="kicker">7 ottobre <span>2023</span></p>
 <h1>Il massacro è documentato</h1><div class="place">Le conclusioni di Human Rights Watch</div>
-<ul class="list"><li><a href="piano/"><strong>I civili erano un obiettivo</strong><em>Uccidere e prendere ostaggi faceva parte del piano</em></a></li>
-<li><a href="civili/"><strong>Gli attacchi contro i civili</strong><em>Persone uccise nelle case, nei rifugi e mentre fuggivano</em></a></li>
-<li><a href="prove/"><strong>Le prove dell'indagine</strong><em>144 persone intervistate, oltre 280 fotografie e video verificati</em></a></li>
-<li><a href="hrw-israele/"><strong>HRW ha accusato anche Israele</strong><em>Una fonte che nessuno può definire filoisraeliana</em></a></li></ul>
+<div class="cover"><span class="org">Human Rights Watch · Rapporto</span><span class="ct">«I Can't Erase All the Blood from My Mind»</span><span class="cs">Palestinian Armed Groups' October 7 Assault on Israel</span><span class="cd">Pubblicato il 17 luglio 2024 · in inglese</span></div>
+<ul class="list"><li><a href="piano/" class="card2"><div class="tb tnum"><b>6.30</b><span>inizio dell'attacco</span></div><span class="tx"><strong>I civili erano un obiettivo</strong><em>Uccidere e prendere ostaggi faceva parte del piano</em></span></a></li><li><a href="civili/" class="card2"><div class="tb tmap" id="tmap"></div><span class="tx"><strong>Gli attacchi contro i civili</strong><em>Persone uccise nelle case, nei rifugi e mentre fuggivano</em></span></a></li><li><a href="prove/" class="card2"><div class="tb tnum"><b>144</b><span>persone intervistate</span></div><span class="tx"><strong>Le prove dell'indagine</strong><em>144 persone intervistate, oltre 280 fotografie e video verificati</em></span></a></li><li><a href="hrw-israele/" class="card2"><div class="tb tnum tdate"><b>19.12</b><span>2024</span></div><span class="tx"><strong>HRW ha accusato anche Israele</strong><em>Una fonte che nessuno può definire filoisraeliana</em></span></a></li></ul>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>(function(){var m=L.map('tmap',{zoomControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false,attributionControl:false}).setView([31.40,34.46],8);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:12}).addTo(m);[[31.397, 34.47], [31.4247, 34.4914], [31.4835, 34.5335], [31.4738, 34.4981], [31.3103, 34.4019], [31.525, 34.596], [31.314, 34.62], [31.3753, 34.3995], [31.3358, 34.395], [31.3526, 34.3983], [31.2377, 34.3569], [31.2283, 34.285], [31.568, 34.539], [31.4517, 34.5144], [31.505, 34.5617]].forEach(function(p){L.circleMarker(p,{radius:2.5,color:'#ff8a80',weight:1,fillColor:'#e05a4f',fillOpacity:1}).addTo(m);});
+window.addEventListener('load',function(){m.invalidateSize();m.setView([31.40,34.46],8);});})();</script>
 </main></body></html>
