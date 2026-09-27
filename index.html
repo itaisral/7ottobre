@@ -55,7 +55,7 @@ ul.home a{align-items:center!important}
 .thn{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
 .thn b{font-family:'Titillium Web',sans-serif;font-weight:700;font-size:1.7rem;line-height:1;color:#fff}
 .thn span{font-size:.7rem;color:#a9cbf0;margin-top:.35em;line-height:1.1}
-.th3{background:#e9ecef}.th3 img{height:180%;width:auto;max-width:none;margin:-26px 0 0 -159px;display:block}
+.th3{background:#1b2230}.th3 .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}
 .th4{display:flex;flex-direction:column;align-items:center;justify-content:center;border-color:#e05a4f;background:rgba(224,90,79,.1)}
 .th4 svg{width:44px;height:44px}.th4 span{font-size:.64rem;line-height:1.05;color:#ff8a80;text-align:center;text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
 ul.home .tx2{min-width:0}ul.home .tx2 .n{display:block;font-size:.95rem;min-width:0;line-height:1;margin-bottom:.2em}</style></head><body><main>
@@ -66,7 +66,12 @@ ul.home .tx2{min-width:0}ul.home .tx2 .n{display:block;font-size:.95rem;min-widt
 <p class="intro">Ricordare le vittime del 7 ottobre e raccontare, con le fonti, che cosa accadde quel giorno.</p>
 <ul class="home"><li><a href="1/"><div class="th th1"><img src="img/regev.jpg" alt=""><img src="img/mann.jpg" alt=""><img src="img/idan.jpg" alt=""></div><span class="tx2"><span class="n">01</span><strong>Messaggi durante il massacro</strong><em>Le voci di chi era lì</em></span></a></li>
 <li><a href="2/"><div class="th thn"><b>HRW</b><span>17 luglio 2024</span></div><span class="tx2"><span class="n">02</span><strong>Il massacro è documentato</strong><em>Le conclusioni di Human Rights Watch</em></span></a></li>
-<li><a href="3/"><div class="th th3"><img src="https://firebasestorage.googleapis.com/v0/b/october-7.appspot.com/o/globals%2Fpreview.webp?alt=media&v=2" alt="" loading="lazy" onerror="this.remove()"></div><span class="tx2"><span class="n">03</span><strong>La mappa degli attacchi</strong><em>I luoghi, le persone e le loro storie</em></span></a></li>
+<li><a href="3/"><div class="th th3" id="tmap3"></div><span class="tx2"><span class="n">03</span><strong>La mappa degli attacchi</strong><em>I luoghi, le persone e le loro storie</em></span></a></li>
 <li><a href="4/"><div class="th th4"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="12" width="30" height="24" rx="3" fill="none" stroke="#ff8a80" stroke-width="3"/><path d="M35 20 L44 14 V34 L35 28 Z" fill="none" stroke="#ff8a80" stroke-width="3" stroke-linejoin="round"/><path d="M16 19 L26 24 L16 29 Z" fill="#ff8a80"/></svg><span>contenuti<br>violenti</span></div><span class="tx2"><span class="n">04</span><strong>La documentazione del massacro</strong><em>Fotografie e video</em></span></a></li></ul>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>(function(){var m=L.map('tmap3',{zoomControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false,attributionControl:false}).setView([31.40,34.46],8);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:12}).addTo(m);[[31.397, 34.47], [31.4247, 34.4914], [31.4835, 34.5335], [31.4738, 34.4981], [31.3103, 34.4019], [31.525, 34.596], [31.314, 34.62], [31.3753, 34.3995], [31.3358, 34.395], [31.3526, 34.3983], [31.2377, 34.3569], [31.2283, 34.285], [31.568, 34.539], [31.4517, 34.5144], [31.505, 34.5617]].forEach(function(p){L.circleMarker(p,{radius:2.5,color:'#ff8a80',weight:1,fillColor:'#e05a4f',fillOpacity:1}).addTo(m);});
+window.addEventListener('load',function(){m.invalidateSize();m.setView([31.40,34.46],8);});})();</script>
 </main></body></html>
