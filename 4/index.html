@@ -22,16 +22,27 @@ ul.list{list-style:none;padding:0;margin:0}ul.list li{border-top:2px solid var(-
 ul.list strong{font-family:'Titillium Web',sans-serif;font-size:1.5rem;display:block}ul.list em{font-style:normal;color:var(--blue);font-family:'Titillium Web',sans-serif;font-weight:700}
 footer{border-top:2px solid var(--line);margin-top:36px;padding-top:14px;color:var(--muted);font-size:.9rem}
 .nastro{position:absolute;top:10px;right:20px;width:min(64%,420px);height:92px;pointer-events:none;background:url('/7ottobre/img/nastro.png') right center/contain no-repeat}
-main{position:relative}</style></head><body><main>
+main{position:relative}.sez4 section{border-top:2px solid #2f7de1;padding:18px 0 20px}
+.sez4 h2{font-family:'Titillium Web',sans-serif;font-weight:700;font-size:1.45rem;line-height:1.2;margin:0}
+.sez4 p{color:#a9cbf0;margin:.1em 0 .8em;font-size:1rem}
+.btn4{display:flex;gap:10px}.btn4 a{flex:1;text-align:center;padding:.65em 1em;border:1.5px solid #a9cbf0;border-radius:4px;color:#a9cbf0;text-decoration:none;font-family:'Titillium Web',sans-serif;font-weight:700;font-size:1.05rem}
+.btn4 a:hover,.btn4 a:focus{background:#a9cbf0;color:#151515}.warn4{border:2px solid #e05a4f;border-radius:6px;padding:14px 16px;margin:18px 0 6px;background:rgba(224,90,79,.1)}
+.warn4 strong{display:block;font-family:'Titillium Web',sans-serif;font-size:1.25rem;color:#ff8a80;margin-bottom:.25em}.warn4 p{margin:0;font-size:1rem}
+.mini{height:170px;border:1px solid rgba(169,203,240,.45);border-radius:3px;margin:0 0 12px;background:#1d2530}
+.mini .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}
+.leaflet-tooltip.lbl{background:rgba(21,21,21,.85);color:#fff;border:0;box-shadow:none;font-family:'Titillium Web',sans-serif;font-weight:600;font-size:12px;padding:1px 6px}.leaflet-tooltip.lbl:before{display:none}
+.nota4{color:#8a96a6;font-size:.85rem;margin-top:.4em}</style></head><body><main>
 <div class="nastro" aria-hidden="true"></div>
 <a class="top" href="../">← 7 ottobre 2023</a>
 <p class="kicker">7 ottobre <span>2023</span></p>
-<h1>La documentazione del massacro</h1><div class="place">Fotografie, video e mappa</div>
-<ul class="list"><li><a href="comunita-foto/"><strong>Le comunità colpite · fotografie</strong></a></li>
-<li><a href="comunita-video/"><strong>Le comunità colpite · video</strong></a></li>
-<li><a href="militari-foto/"><strong>L'attacco alle forze di sicurezza · fotografie</strong></a></li>
-<li><a href="militari-video/"><strong>L'attacco alle forze di sicurezza · video</strong></a></li>
-<li><a href="nova-foto/"><strong>Il festival musicale di Re'im · fotografie</strong></a></li>
-<li><a href="nova-video/"><strong>Il festival musicale di Re'im · video</strong></a></li>
-</ul>
+<h1>La documentazione del massacro</h1><div class="place">Fotografie e video</div>
+<div class="warn4"><strong>Attenzione, contenuti estremamente violenti</strong><p>Le fotografie e i video mostrano persone ferite e uccise. Non sono adatti ai minori né a chi non si sente pronto a vederli. Ogni collegamento apre prima una pagina di avviso.</p></div>
+<div class="sez4"><section><div class="mini" id="m0" role="img" aria-label="Mappa: Le comunità colpite"></div><h2>Le comunità colpite</h2><p>Kibbutz, moshav e cittadine del Negev occidentale</p><div class="btn4"><a href="comunita-foto/">Fotografie</a><a href="comunita-video/">Video</a></div></section><section><div class="mini" id="m1" role="img" aria-label="Mappa: L'attacco alle forze di sicurezza"></div><h2>L'attacco alle forze di sicurezza</h2><p>Basi militari e presidi lungo il confine con Gaza</p><div class="btn4"><a href="militari-foto/">Fotografie</a><a href="militari-video/">Video</a></div></section><section><div class="mini" id="m2" role="img" aria-label="Mappa: Il festival musicale di Re'im"></div><h2>Il festival musicale di Re'im</h2><p>L'area del festival Supernova, vicino al kibbutz di Re'im</p><div class="btn4"><a href="nova-foto/">Fotografie</a><a href="nova-video/">Video</a></div></section></div>
+<p class="nota4">Mappe con posizioni indicative. © OpenStreetMap</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>(function(){var D=[[[["Be'eri", 31.4247, 34.4914], ["Kfar Aza", 31.4835, 34.5335], ["Nir Oz", 31.3103, 34.4019], ["Nahal Oz", 31.4738, 34.4981], ["Kissufim", 31.3753, 34.3995], ["Nirim", 31.3358, 34.395], ["Ein HaShlosha", 31.3526, 34.3983], ["Nir Yitzhak", 31.2377, 34.3569], ["Kerem Shalom", 31.2283, 34.285], ["Netiv HaAsara", 31.568, 34.539], ["Alumim", 31.4517, 34.5144], ["Mefalsim", 31.505, 34.5617], ["Sderot", 31.525, 34.596], ["Ofakim", 31.314, 34.62]], ["Be'eri", "Kfar Aza", "Nir Oz", "Sderot", "Ofakim"]], [[["Nahal Oz", 31.466, 34.497], ["Re'im", 31.3829, 34.4606], ["Zikim", 31.601, 34.52], ["Erez", 31.559, 34.563], ["Kissufim", 31.374, 34.394], ["Sufa", 31.239, 34.339], ["Kerem Shalom", 31.223, 34.283]], ["Nahal Oz", "Re'im", "Zikim", "Erez"]], [[["Festival Supernova", 31.397, 34.47], ["Re'im", 31.3885, 34.4594]], ["Festival Supernova"]]];D.forEach(function(s,i){var m=L.map('m'+i,{zoomControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false,attributionControl:false});
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:14}).addTo(m);var g=[];
+s[0].forEach(function(p){var b=s[1].indexOf(p[0])>-1;g.push([p[1],p[2]]);L.circleMarker([p[1],p[2]],{radius:b?7:4.5,color:'#ff8a80',weight:2,fillColor:'#e05a4f',fillOpacity:.9}).addTo(m).bindTooltip(p[0],{permanent:b,direction:'right',className:'lbl'});});
+if(g.length>2)m.fitBounds(g,{padding:[18,18]});else m.setView(g[0],12);});})();</script>
 </main></body></html>
