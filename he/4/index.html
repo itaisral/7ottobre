@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>טבח · 7 באוקטובר 2023</title>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Frank+Ruhl+Libre:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fbf8f2;--fg:#1f2023;--blue:#b12218;--line:#e4ddd1;--muted:#6b6f76}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:'Titillium Web',system-ui,sans-serif;font-weight:300;line-height:1.6}
@@ -43,9 +42,7 @@ h2.big{font-size:clamp(1.35rem,6vw,1.65rem)}.place{font-size:1.1rem}
 h1,.kicker,ul.list strong,.tx2 strong{font-family:'Titillium Web',sans-serif!important;font-weight:400!important;text-transform:uppercase;letter-spacing:.05em}
 h1 span,.kicker span{font-family:inherit!important}/*/font*/</style><link rel="stylesheet" href="/7ottobre/sito.css?v=20261015s1">
 <!--testa-barra-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&family=Frank+Ruhl+Libre:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/font/font.css?v=20261015z">
 <link rel="stylesheet" href="/barra.css?v=20261015z">
 <!--/testa-barra-->
 </head><body>
@@ -92,8 +89,8 @@ h1 span,.kicker span{font-family:inherit!important}/*/font*/</style><link rel="s
 <div class="sez4"><section><div class="mini" id="m0" role="img" aria-label="מפה: הקהילות שהותקפו"></div><h2>הקהילות שהותקפו</h2><p>קיבוצים, מושבים ועיירות בנגב המערבי</p><div class="btn4"><a href="comunita-foto/">תמונות</a><a href="comunita-video/">סרטונים</a></div></section><section><div class="mini" id="m1" role="img" aria-label="מפה: המתקפה על כוחות הביטחון"></div><h2>המתקפה על כוחות הביטחון</h2><p>בסיסים ומוצבים לאורך גבול עזה</p><div class="btn4"><a href="militari-foto/">תמונות</a><a href="militari-video/">סרטונים</a></div></section><section><div class="mini" id="m2" role="img" aria-label="מפה: מסיבת המוזיקה ברעים"></div><h2>מסיבת המוזיקה ברעים</h2><p>אזור מסיבת הסופרנובה, ליד קיבוץ רעים</p><div class="btn4"><a href="nova-foto/">תמונות</a><a href="nova-video/">סרטונים</a></div></section></div>
 <div class="dopo"><span class="dk">אחרי 7 באוקטובר</span><h2>נז״א: הסיפור האמיתי</h2><p>סרט תיעודי ישראלי · עדויות המפקדים</p><div class="btn4"><a href="naza/">על הסרט</a></div></div>
 <p class="nota4">מפות עם מיקומים משוערים. © OpenStreetMap</p>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link rel="stylesheet" href="/lib/leaflet/leaflet.css?v=1.9.4">
+<script src="/lib/leaflet/leaflet.js?v=1.9.4"></script>
 <script>(function(){var D=[[[["בארי", 31.4247, 34.4914], ["כפר עזה", 31.4835, 34.5335], ["ניר עוז", 31.3103, 34.4019], ["נחל עוז", 31.4738, 34.4981], ["כיסופים", 31.3753, 34.3995], ["נירים", 31.3358, 34.395], ["עין השלושה", 31.3526, 34.3983], ["ניר יצחק", 31.2377, 34.3569], ["כרם שלום", 31.2283, 34.285], ["נתיב העשרה", 31.568, 34.539], ["עלומים", 31.4517, 34.5144], ["מפלסים", 31.505, 34.5617], ["שדרות", 31.525, 34.596], ["אופקים", 31.314, 34.62]], ["בארי", "כפר עזה", "ניר עוז", "שדרות", "אופקים"]], [[["נחל עוז", 31.466, 34.497], ["רעים", 31.3829, 34.4606], ["זיקים", 31.601, 34.52], ["ארז", 31.559, 34.563], ["כיסופים", 31.374, 34.394], ["סופה", 31.239, 34.339], ["כרם שלום", 31.223, 34.283]], ["נחל עוז", "רעים", "זיקים", "ארז"]], [[["פסטיבל סופרנובה", 31.397, 34.47], ["רעים", 31.3885, 34.4594]], ["פסטיבל סופרנובה"]]];D.forEach(function(s,i){var m=L.map('m'+i,{zoomControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false,attributionControl:false});
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:14}).addTo(m);var g=[];
 s[0].forEach(function(p){var b=s[1].indexOf(p[0])>-1;g.push([p[1],p[2]]);L.circleMarker([p[1],p[2]],{radius:b?7:4.5,color:'#ff8a80',weight:2,fillColor:'#e05a4f',fillOpacity:.9}).addTo(m).bindTooltip(p[0],{permanent:b,direction:'right',className:'lbl'});});
