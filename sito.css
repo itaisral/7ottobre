@@ -59,3 +59,6 @@ html[lang="he"] body blockquote, html[lang="he"] body strong, body .he, body [la
 html[lang="ar"] body, html[lang="ar"] body h1, html[lang="ar"] body h2, html[lang="ar"] body p, html[lang="ar"] body li,
 html[lang="ar"] body blockquote, html[lang="ar"] body strong { font-family: "Noto Sans Arabic", "Titillium Web", sans-serif !important; }
 html[lang="he"] body h1, html[lang="ar"] body h1 { font-weight: 400 !important; }
+
+/* la scelta della lingua sta nella barra in alto: via la riga doppia nella pagina */
+body nav.lang { display: none !important; }
