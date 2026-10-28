@@ -2,7 +2,7 @@
 :root { --blu: #18304e; --blu-2: #224774; --rosso: #b12218; --testo: #1f2023; --grigio: #6b6f76; --linea: #e4ddd1; --fondo: #fbf8f2; --crema: #f6eddd; }
 
 html body { background: var(--fondo); color: var(--testo); font-family: "Titillium Web", system-ui, sans-serif; font-weight: 300; }
-body main { max-width: 760px; padding-top: 40px; }
+body main { max-width: 1140px; padding-top: 40px; padding-left: 24px; padding-right: 24px; }
 body p:where(:not(.kicker)), body li { font-size: 17px; line-height: 1.7; }
 
 /* titoli come nelle altre pagine del sito */
