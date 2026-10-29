@@ -62,3 +62,9 @@ html[lang="he"] body h1, html[lang="ar"] body h1 { font-weight: 400 !important; 
 
 /* la scelta della lingua sta nella barra in alto: via la riga doppia nella pagina */
 body nav.lang { display: none !important; }
+
+/* link nei testi: come nel resto del sito */
+body main :is(p, li, figcaption, td, blockquote) a:not(.bottone) {
+  color: #224774; text-decoration-line: underline; text-decoration-thickness: 1px; text-underline-offset: .22em;
+  text-decoration-color: rgba(34, 71, 116, .35); transition: color .15s, text-decoration-color .15s; }
+body main :is(p, li, figcaption, td, blockquote) a:not(.bottone):hover { color: #b12218; text-decoration-color: currentColor; }
